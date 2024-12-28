@@ -1,5 +1,5 @@
 body {
-    background: #f5f5f5;
+    background: url("bg.jpg") no-repeat top center / cover;
     margin-top: 20px;
 }
 
@@ -11,7 +11,7 @@ body {
 .btn-default {
     border-color: rgba(24, 28, 33, 0.1);
     background  : rgba(0, 0, 0, 0);
-    color       : #4E5155;
+    color       : #ffffff;
 }
 
 label.btn {
@@ -24,12 +24,18 @@ label.btn {
     color       : #26B4FF;
 }
 
+.btn-outline-secondary {
+    border-color: #63bae9;
+    background  : transparent;
+    color       : #ffffff;
+}
+
 .btn {
     cursor: pointer;
 }
 
 .text-light {
-    color: #babbbc !important;
+    color: #d8d9da !important;
 }
 
 .btn-facebook {
@@ -132,4 +138,27 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
 
 .rating-container input:checked ~ label {
     color: #c411ec;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header-buttons button {
+    background-color: #163c64;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.header-buttons button:hover {
+    background-color: #0018b3;
 }
